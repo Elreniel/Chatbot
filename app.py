@@ -18,7 +18,6 @@ from typing import List
 
 device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
 model_list = ("tiiuae/falcon-40b-instruct", "meta-llama/Llama-2-13b-chat-hf", "meta-llama/Llama-2-7b-chat-hf")
-model_list = ("meta-llama/Llama-2-13b-chat-hf", "meta-llama/Llama-2-7b-chat-hf")
 model_eng2tr_name = "Helsinki-NLP/opus-mt-tc-big-en-tr"
 model_tr2eng_name = "Helsinki-NLP/opus-mt-tc-big-tr-en"
 embedding_name = "sentence-transformers/all-mpnet-base-v2"
