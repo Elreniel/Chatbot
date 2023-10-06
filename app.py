@@ -115,7 +115,7 @@ def get_llm_chain(model_id):
 
     model = AutoModelForCausalLM.from_pretrained(model_id,
                                                  trust_remote_code=True,
-                                                 load_in_8bit=True,
+                                                 #load_in_8bit=True,
                                                  device_map="auto",
                                                  token=HUGGINGFACE_TOKEN)
     model = model.eval()
